@@ -1,0 +1,30 @@
+{
+	"name": "code-snips",
+	"version": "1.0.0",
+	"description": "",
+	"main": "code-snips.ts",
+	"scripts": {
+		"dev": "tsup --watch",
+		"build": "tsc --noEmit && tsup",
+		"build:clean": "tsc --noEmit && tsup --clean"
+	},
+	"files": ["dist/**"],
+	"exports": {
+		"./snip": {
+			"types": "./dist/snip.d.ts",
+			"default": "./dist/snip.js",
+			"require": "./dist/snip.cjs"
+		}
+	},
+	"type": "module",
+	"keywords": [],
+	"author": "Amir Hasrati",
+	"license": "ISC",
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"tsup": "^8.3.5"
+	},
+	"dependencies": {
+		"typescript": "^5.6.3"
+	}
+}
