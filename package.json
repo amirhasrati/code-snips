@@ -1,6 +1,6 @@
 {
 	"name": "code-snips",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "",
 	"main": "code-snips.ts",
 	"scripts": {
@@ -8,7 +8,9 @@
 		"build": "tsc --noEmit && tsup",
 		"build:clean": "tsc --noEmit && tsup --clean"
 	},
-	"files": ["dist/**"],
+	"files": [
+		"dist/**"
+	],
 	"exports": {
 		"./snip": {
 			"types": "./dist/snip.d.ts",
