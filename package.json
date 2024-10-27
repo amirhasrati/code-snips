@@ -8,9 +8,7 @@
 		"build": "tsc --noEmit && tsup",
 		"build:clean": "tsc --noEmit && tsup --clean"
 	},
-	"files": [
-		"dist/**"
-	],
+	"files": ["dist/**"],
 	"exports": {
 		"./snip": {
 			"types": "./dist/snip.d.ts",
